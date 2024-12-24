@@ -1,0 +1,14 @@
+.product_page {
+  padding: 16px;
+}
+
+.product_item {
+  color: white;
+  text-align: center;
+}
+
+.product_image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}

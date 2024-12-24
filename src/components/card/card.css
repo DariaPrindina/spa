@@ -1,0 +1,26 @@
+.card {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 50px 15px 15px 15px;
+  position: relative;
+  transition: transform 0.2s, background-color 0.3s ease;
+  background-color: rgb(34, 34, 34);
+  display: inline-block;
+  width: 180px;
+  height: 220px;
+  color: white;
+  border: 1px solid #131313;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  transition: transform 0.2s, background-color 0.3s ease; /* Плавный переход */
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+

@@ -1,0 +1,19 @@
+.background {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #A215B1; /* Малиновый цвет */
+  border-radius: 50%; /* Круглая форма */
+  filter: blur(100px); /* Размытие */
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10; /* Размещение круга за контентом */
+}
