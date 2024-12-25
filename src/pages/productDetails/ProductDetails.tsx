@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import { Button } from '@mui/material';
-import './productDetails.css'
+import './productDetails.css';
 
 const ProductDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -16,24 +16,32 @@ const ProductDetails: React.FC = () => {
 
   return (
     <div className='product_page'>
-      <Button variant="contained"
+      <Button
+        variant="contained"
         sx={{
-          background: 'linear-gradient(to right, #0A7AF3, #770A88)', // Градиент от синего к фиолетовому
-          borderRadius: '8px', // Скругление углов
-          color: 'white', // Белый цвет текста
-          padding: '10px 20px', // Отступы
-          transition: 'background 0.3s ease', // Плавный переход
-          '&:hover': {
-            backgroundColor: '',
-            background: '#0A7AF3', // При наведении кнопка становится розовой
-          },
-        }} onClick={() => navigate('/')} style={{ marginBottom: '16px' }}>
+          background: 'linear-gradient(to right, #0A7AF3, #770A88)',
+          borderRadius: '8px',
+          color: 'white',
+          padding: '10px 20px',
+          transition: 'background 0.3s ease',
+          '&:hover': { background: '#0A7AF3' },
+        }}
+        onClick={() => navigate('/')}
+        style={{ marginBottom: '16px' }}
+      >
         Назад к списку
       </Button>
       <div className='product_item'>
         <img className='product_image' src={product.image} alt={product.title} />
         <h1>{product.title}</h1>
         <p>{product.description}</p>
+        <Button
+          variant="outlined"
+          color="primary"
+          onClick={() => navigate(`/products/${product.id}/edit`)}
+        >
+          Редактировать
+        </Button>
       </div>
     </div>
   );

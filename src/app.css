@@ -12,7 +12,7 @@
   background-color: #A215B1; /* Малиновый цвет */
   border-radius: 50%; /* Круглая форма */
   filter: blur(100px); /* Размытие */
-  top: 100%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -10; /* Размещение круга за контентом */

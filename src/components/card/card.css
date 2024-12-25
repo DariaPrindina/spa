@@ -24,3 +24,43 @@
   z-index: 1;
 }
 
+.card__img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Элемент "card__title" */
+.card__title {
+  margin: 16px 0;
+  font-size: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Элемент "card__description" */
+.card__description {
+  font-size: 0.9em;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Элемент "card__actions" */
+.card__actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+}
+
+.card__actions-button:hover {
+  border: 1px solid #6BDEFF;
+}
+
+/* Модификатор для "liked" */
+.card__actions-button--liked {
+  color: red;
+}

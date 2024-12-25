@@ -26,7 +26,7 @@ const CreateProduct: React.FC = () => {
       isLiked: false,
     };
     dispatch(addProduct(newProduct));
-    navigate('/products');
+    navigate('/');
   };
 
   return (
