@@ -1,19 +1,20 @@
 {
   "name": "spa-product-list",
+  "author": "Daria Prindina",
   "version": "1.0.0",
-  "description": "",
+  "description": "SPA with a list of cards",
+  "homepage": "https://DariaPrindina.github.io/spa",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src --ext .tsx,.ts,.js,.jsx",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -29,22 +30,19 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.1",
     "react-scripts": "^5.0.1",
-    "redux": "^5.0.1",
-    "zustand": "^5.0.2"
+    "redux": "^5.0.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
-    "@types/jest": "^29.5.14",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "@types/uuid": "^10.0.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.3",
+    "gh-pages": "^6.2.0",
     "husky": "^9.1.7",
-    "jest": "^27.5.1",
     "typescript": "^4.9.5"
   },
   "browserslist": {

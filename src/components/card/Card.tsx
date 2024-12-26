@@ -20,9 +20,9 @@ const Card: React.FC<CardProps> = ({ product, onClick }) => {
   const { favoritesOnly } = useSelector((state: RootState) => state.products);
 
   const handleDelete = (productId: string) => {
-    dispatch(deleteProduct(productId)); // Удаляем продукт из состояния Redux
+    dispatch(deleteProduct(productId));
     if (favoritesOnly) {
-      dispatch(filterFavorites()); // Применяем фильтрацию после удаления
+      dispatch(filterFavorites());
     }
   };
   

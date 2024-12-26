@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import ProductForm from '../../components/productForm/ProductForm';
+import ProductForm from '../../components/productForm/productForm';
 import { RootState } from '../../store/store';
 import { updateProduct } from '../../store/productSlice';
 import { Product } from '../../store/productSlice';
@@ -19,14 +19,16 @@ const EditProduct: React.FC = () => {
 
   const handleUpdateProduct = (updatedProduct: Product) => {
     dispatch(updateProduct(updatedProduct));
-    navigate('/');
+    navigate('/products');
   };
 
   return (
-    <div style={{ padding: '16px', color: '#FFFFFF', textAlign: 'center' }}>
-      <h2>Редактирование продукта</h2>
-      <ProductForm product={product} onSubmit={handleUpdateProduct} />
-    </div>
+    <ProductForm
+      product={product}
+      onSubmit={handleUpdateProduct}
+      title="Редактировать"
+      buttonText="Сохранить"
+    />
   );
 };
 

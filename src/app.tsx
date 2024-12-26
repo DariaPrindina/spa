@@ -1,9 +1,9 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Products from './pages/Products';
-import ProductDetails from './pages/productDetails/ProductDetails';
-import CreateProduct from './pages/CreateProduct';
-import EditProduct from './pages/editProduct/EditProduct';
+import { Routes, Route, Navigate  } from 'react-router-dom';
+import Products from './pages/products/Products';
+import ProductDetails from './pages/product-details/ProductDetails';
+import CreateProduct from './pages/create-product/CreateProduct';
+import EditProduct from './pages/edit-product/EditProduct';
 import './app.css'
 
 const App: React.FC = () => {
@@ -11,7 +11,8 @@ const App: React.FC = () => {
     <div className='background'>
       <div className="circle"></div>
       <Routes>
-        <Route path="/" element={<Products />} />
+        <Route path="/" element={<Navigate to="/products" />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="/products/:id/edit" element={<EditProduct />} />
         <Route path="/create" element={<CreateProduct />} />

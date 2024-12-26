@@ -26,7 +26,7 @@ const ProductDetails: React.FC = () => {
           transition: 'background 0.3s ease',
           '&:hover': { background: '#0A7AF3' },
         }}
-        onClick={() => navigate('/')}
+        onClick={() => navigate('/products')}
         style={{ marginBottom: '16px' }}
       >
         Назад к списку

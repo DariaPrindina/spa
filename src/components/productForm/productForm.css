@@ -1,3 +1,7 @@
+.container {
+  margin-top: 60px;
+}
+
 .form {
   display: flex;
   flex-direction: column;

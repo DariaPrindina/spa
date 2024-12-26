@@ -16,7 +16,7 @@
   content: "";
   position: absolute;
   inset: 0px;
-  transition: transform 0.2s, background-color 0.3s ease; /* Плавный переход */
+  transition: transform 0.2s, background-color 0.3s ease;
 }
 
 .card:hover {
@@ -30,7 +30,6 @@
   object-fit: cover;
 }
 
-/* Элемент "card__title" */
 .card__title {
   margin: 16px 0;
   font-size: 1.2em;
@@ -39,7 +38,6 @@
   white-space: nowrap;
 }
 
-/* Элемент "card__description" */
 .card__description {
   font-size: 0.9em;
   color: #555;
@@ -48,7 +46,7 @@
   white-space: nowrap;
 }
 
-/* Элемент "card__actions" */
+
 .card__actions {
   position: absolute;
   top: 8px;
@@ -60,7 +58,6 @@
   border: 1px solid #6BDEFF;
 }
 
-/* Модификатор для "liked" */
 .card__actions-button--liked {
   color: red;
 }

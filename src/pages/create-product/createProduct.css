@@ -1,0 +1,14 @@
+.form_create_product {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.header {
+  padding: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
