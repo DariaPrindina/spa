@@ -5,7 +5,7 @@ import { addProduct } from '../../store/productSlice';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import './createProduct.css'
-import ProductForm from '../../components/productForm/productForm';
+import ProductForm from '../../components/productForm/ProductForm';
 
 interface FormData {
   title: string;

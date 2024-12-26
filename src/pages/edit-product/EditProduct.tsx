@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import ProductForm from '../../components/productForm/productForm';
+import ProductForm from '../../components/productForm/ProductForm';
 import { RootState } from '../../store/store';
 import { updateProduct } from '../../store/productSlice';
 import { Product } from '../../store/productSlice';
