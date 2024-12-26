@@ -13,6 +13,8 @@
 - **Redux Toolkit**
 - **React Router**
 - **React Hook Form**
+- **Material-UI (@mui)**
+- **Axios**
 
 ---
 
