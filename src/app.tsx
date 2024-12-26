@@ -8,7 +8,7 @@ import './app.css'
 
 const App: React.FC = () => {
   return (
-    <Router  basename="/spa"> 
+    <Router> 
       <div className='background'>
         <div className="circle"></div>
         <Routes>
